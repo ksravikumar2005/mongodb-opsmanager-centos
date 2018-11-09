@@ -1,0 +1,87 @@
+version: '3'
+services:
+   opsmanager:
+     build: ./ops-manager
+     hostname: opsmanager 
+     ports:
+       - 8080:8080
+       - 8081:8081
+     volumes:
+       - opsmanager_datadb:/data/db
+       - etc-mms:/etc/mongodb-mms
+       - opt-mms:/opt/mongodb/mms
+       - ./certs:/certs
+     networks:
+       - opsmanager
+
+   opsmanager-db:
+     image: mongo:latest
+     hostname: opsmanager-db
+     ports:
+       - 27017:27017
+     volumes:
+       - opsmanagerdatabase_datadb:/data/db
+       - ./certs:/certs
+     networks:
+       - opsmanager
+   opsmanager-backup:
+     image: mongo:latest
+     hostname: opsmanager-backup
+     ports:
+       - 37017:27017
+     volumes:
+       - backupdatabase_datadb:/data/db
+       - ./certs:/certs
+     networks:
+       - opsmanager
+   node1:
+     image: ksravikumar2005/mongo:automation-agent-centos-root
+     hostname: node1
+     command: --mmsBaseUrl=http://192.168.0.18:8080 --mmsGroupId=5bdf49b99194be0079785b5a  --mmsApiKey=5bdf4adf9194be0079785bc1355fce6c6e88c4de57cc41bfa94e2526  --logFile=/var/log/mongodb-mms-automation/automation-agent.log
+     ports:
+       - 11017:27017
+     volumes:
+       - node1_datadb:/data/db
+       - ./certs:/certs
+     networks:
+       - opsmanager
+
+
+   node2:
+     image: ksravikumar2005/mongo:automation-agent-centos-root
+     hostname: node2
+     command: --mmsBaseUrl=http://192.168.0.18:8080 --mmsGroupId=5bdf49b99194be0079785b5a  --mmsApiKey=5bdf4adf9194be0079785bc1355fce6c6e88c4de57cc41bfa94e2526  --logFile=/var/log/mongodb-mms-automation/automation-agent.log
+     ports:
+       - 12017:27017
+     volumes:
+       - node2_datadb:/data/db
+       - ./certs:/certs
+     networks:
+       - opsmanager
+
+
+   node3:
+     image: ksravikumar2005/mongo:automation-agent-centos-root
+     hostname: node3
+     command: --mmsBaseUrl=http://192.168.0.18:8080 --mmsGroupId=5bdf49b99194be0079785b5a  --mmsApiKey=5bdf4adf9194be0079785bc1355fce6c6e88c4de57cc41bfa94e2526  --logFile=/var/log/mongodb-mms-automation/automation-agent.log
+     ports:
+       - 13017:27017
+     volumes:
+       - node3_datadb:/data/db
+       - ./certs:/certs
+     networks:
+       - opsmanager
+
+
+volumes:
+   opsmanager_datadb:
+   etc-mms:
+   opsmanagerdatabase_datadb:
+   opt-mms:
+   backupdatabase_datadb:
+   node1_datadb:
+   node2_datadb:
+   node3_datadb:
+networks:
+  opsmanager:
+

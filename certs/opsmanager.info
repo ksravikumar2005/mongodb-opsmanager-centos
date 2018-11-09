@@ -1,0 +1,51 @@
+SHA1 Fingerprint=B9:7B:2D:65:B0:8E:9E:3E:7E:AE:6A:29:15:80:8C:D8:5B:20:7A:F1
+Certificate:
+    Data:
+        Version: 1 (0x0)
+        Serial Number:
+            a9:36:87:5a:e8:7d:50:bf
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=SomeState, L=SomeCity, O=SomeOffice, CN=opsmanager
+        Validity
+            Not Before: Nov  4 20:03:01 2018 GMT
+            Not After : Nov  1 20:03:01 2028 GMT
+        Subject: C=US, ST=SomeState, L=SomeCity, O=SomeOffice, CN=opsmanager
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:d7:ed:17:8c:11:2c:b2:16:ba:3f:0f:bc:cc:dd:
+                    b3:6b:21:1f:e3:45:ef:a9:8b:49:eb:2f:77:f9:90:
+                    f9:12:f9:ae:50:e9:19:67:62:d3:bd:b4:5a:6f:21:
+                    34:d4:e4:48:9e:e1:84:cb:05:fe:4d:b0:50:d9:2e:
+                    e8:47:f3:f1:c7:c6:d6:f7:73:37:0d:8e:73:8c:17:
+                    8c:8a:94:a8:21:b3:39:57:48:27:99:33:db:f7:dd:
+                    fd:af:08:35:c9:6d:e6:a2:ae:89:d8:cf:c0:e9:98:
+                    24:c5:f3:58:60:91:d4:47:90:d0:ff:af:21:4b:bf:
+                    83:fc:77:00:ce:58:86:8f:b1:b5:b8:d0:28:13:ab:
+                    a0:f4:1b:77:84:e0:e3:64:7b:d4:1e:2e:b1:9d:a6:
+                    41:56:ee:da:90:45:74:60:cd:90:51:65:ff:f7:85:
+                    b1:db:46:ba:6d:da:45:b3:32:7b:ad:43:89:f3:ef:
+                    ea:1e:1b:48:3b:bd:41:1f:04:62:a7:99:7b:17:f5:
+                    f3:cc:26:72:a1:66:a8:6a:12:42:64:99:61:e1:92:
+                    f7:c7:ee:b5:8b:7e:cd:ef:15:2b:87:33:c7:d3:d6:
+                    bc:eb:a6:20:32:cc:4d:08:c9:f4:d9:05:fc:e1:1f:
+                    77:3a:6e:70:72:9c:d6:9f:59:d8:1a:c5:37:c7:9f:
+                    25:41
+                Exponent: 65537 (0x10001)
+    Signature Algorithm: sha1WithRSAEncryption
+         c6:fa:81:44:f1:ca:43:4e:55:d4:b9:7f:45:e8:8e:3b:92:b3:
+         24:2f:21:c7:bb:2d:03:18:0c:24:fd:18:8e:5f:3c:cb:b2:51:
+         2d:b8:50:f2:d4:8d:5e:42:53:3f:1b:4b:35:98:52:84:1f:1a:
+         f4:d0:01:eb:c7:86:be:fc:4a:16:54:28:0d:a3:8e:ae:43:6a:
+         cb:bb:31:4f:70:4f:88:57:21:99:d5:00:fe:5e:c5:8b:ac:29:
+         c4:56:ed:33:6a:5a:6b:dc:bf:5f:2f:3b:14:a9:61:63:4a:25:
+         c8:94:4b:e1:88:cf:e5:a9:f2:d8:84:c5:ed:1e:a5:6a:0e:ed:
+         04:a3:fc:3b:a5:63:35:39:bd:c7:ff:ce:70:f7:a2:6b:69:ad:
+         8b:b3:98:55:f6:b3:b1:12:4f:10:4f:91:8b:c4:6b:05:d7:0f:
+         07:ce:cf:01:3b:d2:72:d9:d3:75:d9:0c:3f:50:ff:ea:b5:d5:
+         a1:48:26:b3:7d:0b:4f:fe:32:2b:98:ff:f1:1a:17:44:d3:0a:
+         3e:b2:41:78:65:55:95:f7:19:92:9e:be:d8:29:b4:59:db:4f:
+         6d:3f:bd:c3:3d:2f:44:62:3c:6a:aa:ec:fd:5e:88:7d:87:15:
+         e9:eb:21:46:6b:a2:f0:2c:5e:0d:6f:64:31:1d:a3:ba:39:1b:
+         12:52:6d:f7
