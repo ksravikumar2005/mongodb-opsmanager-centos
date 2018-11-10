@@ -37,7 +37,7 @@ services:
    node1:
      image: ksravikumar2005/mongo:automation-agent-centos-root
      hostname: node1
-     command: --mmsBaseUrl=http://192.168.0.18:8080 --mmsGroupId=5bdf49b99194be0079785b5a  --mmsApiKey=5bdf4adf9194be0079785bc1355fce6c6e88c4de57cc41bfa94e2526  --logFile=/var/log/mongodb-mms-automation/automation-agent.log
+     command: --mmsBaseUrl=http://opsmanager:8080 --mmsGroupId=5be63b1b6f5e5d007b04a8d9  --mmsApiKey=5be63d586f5e5d007b04a94dc9dd82855707faa54d3b89a509ffea96  --logFile=/var/log/mongodb-mms-automation/automation-agent.log
      ports:
        - 11017:27017
      volumes:
@@ -50,7 +50,7 @@ services:
    node2:
      image: ksravikumar2005/mongo:automation-agent-centos-root
      hostname: node2
-     command: --mmsBaseUrl=http://192.168.0.18:8080 --mmsGroupId=5bdf49b99194be0079785b5a  --mmsApiKey=5bdf4adf9194be0079785bc1355fce6c6e88c4de57cc41bfa94e2526  --logFile=/var/log/mongodb-mms-automation/automation-agent.log
+     command: --mmsBaseUrl=http://opsmanager:8080 --mmsGroupId=5be63b1b6f5e5d007b04a8d9  --mmsApiKey=5be63d586f5e5d007b04a94dc9dd82855707faa54d3b89a509ffea96  --logFile=/var/log/mongodb-mms-automation/automation-agent.log
      ports:
        - 12017:27017
      volumes:
@@ -63,7 +63,7 @@ services:
    node3:
      image: ksravikumar2005/mongo:automation-agent-centos-root
      hostname: node3
-     command: --mmsBaseUrl=http://192.168.0.18:8080 --mmsGroupId=5bdf49b99194be0079785b5a  --mmsApiKey=5bdf4adf9194be0079785bc1355fce6c6e88c4de57cc41bfa94e2526  --logFile=/var/log/mongodb-mms-automation/automation-agent.log
+     command: --mmsBaseUrl=http://opsmanager:8080 --mmsGroupId=5be63b1b6f5e5d007b04a8d9  --mmsApiKey=5be63d586f5e5d007b04a94dc9dd82855707faa54d3b89a509ffea96  --logFile=/var/log/mongodb-mms-automation/automation-agent.log
      ports:
        - 13017:27017
      volumes:
