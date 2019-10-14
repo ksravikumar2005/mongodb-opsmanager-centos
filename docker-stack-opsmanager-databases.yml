@@ -1,0 +1,28 @@
+version: '3'
+services:
+
+   opsmanager-db:
+     image: ksravikumar2005/mongodb:latest
+     hostname: opsmanager-db
+     ports:
+       - 27017:27017
+     volumes:
+       - opsmanagerdatabase_datadb:/data/db
+     networks:
+       - opsmanager
+
+   opsmanager-backup:
+     image: ksravikumar2005/mongodb:latest
+     hostname: opsmanager-backup
+     ports:
+       - 37017:27017
+     volumes:
+       - backupdatabase_datadb:/data/db
+     networks:
+       - opsmanager
+volumes:
+   opsmanagerdatabase_datadb:
+   backupdatabase_datadb:
+networks:
+  opsmanager:
+
