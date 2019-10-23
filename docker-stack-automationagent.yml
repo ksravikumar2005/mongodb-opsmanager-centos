@@ -6,7 +6,7 @@ services:
     ports:
       - 11117:27000
     volumes:
-      - ./automation-agent-data/db:/data/db
+      - automation-agent-data/db:/data/db
     networks:
       - opsmanager
     command: --mmsBaseUrl=http://2886795283-18080-frugo01.environments.katacoda.com --mmsGroupId=5dafb6cca228fe0063898805  --mmsApiKey=5dafba1ea228fe006389892d7c36c79977f2a7e211b8298e63c03d19
