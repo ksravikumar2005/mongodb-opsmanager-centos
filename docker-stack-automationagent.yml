@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
    node1:
     hostname: node1
@@ -13,5 +13,5 @@ services:
 volumes:
    automation-agent_datadb:
 networks:
-  mongodb:
+ opsmanager:
 
